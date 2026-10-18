@@ -193,3 +193,6 @@ h1,h2,h3,h4{letter-spacing:.005em;font-weight:800}body{font-size:18px}
 .slider .dots{display:flex;gap:10px}.slider .dots button{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);padding:0;background:transparent}.slider .dots button[aria-current=true]{background:var(--rust);border-color:var(--rust)}
 @media(max-width:600px){.rslide{padding:30px 22px}.rslide .tl{margin-left:0}}
 h1,h2,h3,h4{letter-spacing:-.01em;font-weight:800}body{font-size:17px}
+/* touch targets */
+.tl,.hero3 .sl,.topbar a{display:inline-block;padding:12px 0;min-height:44px}.tel{display:inline-block;padding:12px 0}
+.slider .dots button{position:relative}.slider .dots button:after{content:"";position:absolute;inset:-15px}
