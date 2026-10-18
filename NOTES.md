@@ -5,8 +5,11 @@ existing live pages on wastebegone.ca. About and Snow Removal jump to sections o
 The inner pages were drafted and are kept separately if wanted later.
 
 ## Needs your confirmation
-1. Reviews: the old site's review sections were empty and Google Maps could not be read from the build environment, so NO review
-   text is shown. Reviews sections link to the Google listing you gave. NOTE that link is for a Calgary address
+1. Reviews: three Google review excerpts supplied by the client are shown exactly as received (truncated by Google). The first review's
+   reviewer name and date were cut off in the paste and show as "Google review". No star rating or review count is displayed. Send the
+   full text, names and ratings to extend this.
+   (Earlier note, superseded:) the old site's review sections were empty, so NO review
+   text was shown. Reviews sections link to the Google listing you gave. NOTE that link is for a Calgary address
    (40 Sunpark Plaza SE #208), but the old site lists 28 Page Avenue, Red Deer. Confirm the right listing, or paste the
    review text/ratings and they can be added as real quotes.
 2. Address 28 Page Avenue, Red Deer T4P 1J8 comes from the old Request a Quote page. Confirm.
