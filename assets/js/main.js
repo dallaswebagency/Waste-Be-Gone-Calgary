@@ -17,5 +17,13 @@ d.querySelectorAll('form[data-mail]').forEach(function(f){f.addEventListener('su
  var L=[];new FormData(f).forEach(function(v,k){if(String(v).trim())L.push(k+': '+v)});
  var m=f.querySelector('.msg');if(m){m.classList.add('show');m.textContent='Thanks! Opening your email app with your request. If nothing opens, call 403-848-4825 or email Landon@wastebegone.ca.'}
  location.href='mailto:Landon@wastebegone.ca?subject='+encodeURIComponent(f.getAttribute('data-subject')||'Quote request')+'&body='+encodeURIComponent(L.join('\n'))})});
+
+/* reviews slider */
+d.querySelectorAll('.slider').forEach(function(sl){var tr=sl.querySelector('.track'),n=tr.children.length,i=0,dots=sl.querySelector('.dots'),t;
+ for(var k=0;k<n;k++){(function(k){var b=d.createElement('button');b.type='button';b.setAttribute('aria-label','Review '+(k+1));b.onclick=function(){go(k,1)};dots.appendChild(b)})(k)}
+ function go(x,user){i=(x+n)%n;tr.style.transform='translateX(-'+i*100+'%)';[].forEach.call(dots.children,function(b,k){b.setAttribute('aria-current',k===i)});if(user)stop()}
+ function stop(){clearInterval(t);t=0}function start(){if(!t&&!matchMedia('(prefers-reduced-motion: reduce)').matches)t=setInterval(function(){go(i+1)},7000)}
+ sl.querySelector('.prev').onclick=function(){go(i-1,1)};sl.querySelector('.next').onclick=function(){go(i+1,1)};
+ sl.addEventListener('mouseenter',stop);sl.addEventListener('mouseleave',start);sl.addEventListener('focusin',stop);go(0);start()});
 d.querySelectorAll('[data-year]').forEach(function(e){e.textContent=new Date().getFullYear()});
 })();
